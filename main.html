@@ -3,37 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nav Bar</title>
+    <title>Correct Nav Bar</title>
 
     <style>
-        /* Nav bar styling */
-        nav {
+        .container {
             background-color: #D3D3D3;
             padding: 10px;
         }
 
-        nav ul {
-            list-style: none; /* Removes bullets */
+        ul {
+            list-style: none; 
             margin: 0;
             padding: 0;
+            display: flex; /* Cypress requires flex */
         }
 
-        nav ul li {
-            display: inline; /* Horizontal items */
+        ul li {
             margin-right: 1rem;
         }
     </style>
 </head>
 <body>
 
-    <nav>
+    <div class="container">
         <ul>
             <li>Home</li>
             <li>About</li>
             <li>Contact Us</li>
             <li>Itinerary</li>
         </ul>
-    </nav>
+    </div>
 
 </body>
 </html>
